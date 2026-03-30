@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias da Lelê | Doces Caseiros</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Remix Icons for fast icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                <i class="ri-menu-line"></i>
+            </button>
+            <a href="#" class="logo">
+                <div class="brand-logo-wrapper" title="Logotipo Delícias da Lelê"></div>
+                <span class="brand-text">Delícias da Lelê</span>
+            </a>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-icon" id="cartBtn">
+                <i class="ri-shopping-bag-3-line"></i>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <h1>Sabor de Infância, Feito com Amor.</h1>
+                <p>Descubra os doces artesanais mais deliciosos e irresistíveis da cidade. Ingredientes selecionados, receita de família e muito carinho em cada pedaço.</p>
+                <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+            </div>
+            <div class="hero-image fade-in-delay">
+                <img src="assets/images/hero-sweets.png" alt="Mesa farta de doces caseiros da Delícias da Lelê">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu / Products Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Nossas Delícias</h2>
+                <p>Escolha seus favoritos e monte o seu pedido.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Produto 1: Pudim -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/pudim.png" alt="Pudim Tradicional">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pudim Tradicional</h3>
+                        <p>O autêntico pudim de leite condensado, super cremoso, sem furinhos e com aquela calda incrivelmente brilhante.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 45,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="101" data-name="Pudim Tradicional" data-price="45.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Produto 6: Taça da Felicidade de Uva -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/taca-uva.jpeg" alt="Taça da Felicidade de Uva" style="object-position: center 25%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Taça da Felicidade de Uva</h3>
+                        <p>Taça irresistível em camadas: creme de chocolate cremoso, uva verde inteira e gotas de chocolate.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 22,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="106" data-name="Taça de Uva" data-price="22.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 7: Taça da Felicidade de Morango -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/taca-morango.jpeg" alt="Taça da Felicidade de Morango" style="object-position: center 25%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Taça da Felicidade de Morango</h3>
+                        <p>Deliciosa taça recheada com muito creme de chocolate, gotas de chocolate e coroada com um morango fresco.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 25,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="107" data-name="Taça de Morango" data-price="25.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 8: Brownie na Marmita com Morango -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/brownie-marmita.jpeg" alt="Brownie na Marmita com Morango" style="object-position: center 25%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Brownie na Marmita</h3>
+                        <p>Generosa porção de brownie coberta com muito brigadeiro cremoso, amendoim e finalizada com morango.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 28,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="108" data-name="Brownie na Marmita" data-price="28.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 9: Bolo na Marmita Duo com Biscoito -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/marmita-duo.jpeg" alt="Bolo na Marmita Duo com Biscoito" style="object-position: center 25%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo na Marmita Duo</h3>
+                        <p>Bolo gelado em camadas! Base clara e uma farta cobertura de chocolate, amendoim e saboroso biscoito.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 26,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="109" data-name="Bolo Marmita Duo" data-price="26.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 10: Bolo na Marmita de Oreo -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/marmita-oreo.jpeg" alt="Bolo na Marmita de Oreo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo na Marmita Oreo</h3>
+                        <p>Combinação maravilhosa: base cremosa, bolachas Oreo e finalização caprichada de creme de chocolate trufado.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 26,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="110" data-name="Bolo Marmita Oreo" data-price="26.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 11: Ovo de Colher Bolo de Cenoura com Brigadeiro -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/ovo-cenoura.jpeg" alt="Ovo de Colher Bolo de Cenoura">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ovo de Colher Cenoura</h3>
+                        <p>Meia casca recheada com bolo de cenoura fofinho, rica cobertura de chocolate e brigadeiros enrolados.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 65,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="111" data-name="Ovo Colher Cenoura" data-price="65.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 12: Ovo de Colher Sensação / Bicho de pé -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/ovo-morango.jpeg" alt="Ovo de Colher Sensação">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ovo de Colher Sensação</h3>
+                        <p>Casca saborosa preenchida com creme de chocolate e creme de morango, decoração clássica com morangos frescos.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 75,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="112" data-name="Ovo Colher Sensação" data-price="75.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 13: Bolo Caseiro de Chocolate/Brigadeiro -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/bolo-caseiro.jpeg" alt="Bolo Caseiraço de Chocolate">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo Caseirão Brigadeiro</h3>
+                        <p>O bolo caseiro perfeito! Massa úmida com farta cobertura de brigadeiro e granulado. Derrete na boca!</p>
+                        <div class="price-action">
+                            <span class="price">R$ 48,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="113" data-name="Bolo Caseiro" data-price="48.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 14: Bolo Vulcão de Brigadeiro -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/bolo-vulcao-brigadeiro.jpeg" alt="Bolo Vulcão de Brigadeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo Vulcão de Brigadeiro</h3>
+                        <p>Pura explosão de sabor! Massa fofinha, afogada em uma verdadeira piscina de brigadeiro e muito granulado.</p>
+                        <div class="price-action">
+                            <span class="price">R$ 55,00</span>
+                            <button class="btn btn-outline add-to-cart" data-id="114" data-name="Bolo Vulcão Brigadeiro" data-price="55.00">
+                                <i class="ri-shopping-cart-2-add-line"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <h3><svg class="pudim-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M3 20h18"/><path d="M5 20l2.5-11c.3-1.5 1.5-2.5 3-2.5h3c1.5 0 2.7 1 3 2.5l2.5 11"/><path d="M7.5 9q2.25 3 4.5 0q2.25 3 4.5 0"/></svg> Delícias da Lelê</h3>
+                <p>O autêntico sabor de infância, feito com ingredientes selecionados e muito carinho em cada receita.</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com/delicias.dalelee" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://wa.me/5519997481943" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h4>Navegação rápida</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Atendimento</h4>
+                <p><i class="ri-whatsapp-line"></i> (19) 99748-1943</p>
+                <p><i class="ri-instagram-line"></i> @delicias.dalelee</p>
+                <p><i class="ri-time-line"></i> <strong>Horário:</strong><br> Seg a Sáb - 09:00 às 18:00</p>
+                <p><i class="ri-map-pin-line"></i> <strong>Retiradas:</strong><br> Agendadas pelo WhatsApp</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Delícias da Lelê. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Overlay do Carrinho (Fundo escuro) -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Carrinho Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Seu Pedido</h2>
+            <button class="close-cart" id="closeCartBtn"><i class="ri-close-line"></i></button>
+        </div>
+        
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- Itens do carrinho serão populados aqui pelo script.js -->
+            <div class="empty-cart-msg">
+                Seu carrinho está vazio. ☹️
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="delivery-options">
+                <h4>Opção de Recebimento:</h4>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="deliveryOption" value="Retirada" checked>
+                        Retirar no local
+                    </label>
+                    <label>
+                        <input type="radio" name="deliveryOption" value="Entrega (Delivery)">
+                        Receber em casa (Delivery)
+                    </label>
+                </div>
+                <div class="address-field" id="addressField" style="display: none;">
+                    <textarea id="deliveryAddress" placeholder="Digite seu endereço completo (Rua, Número, Bairro, Ponto de Referência)..." rows="3"></textarea>
+                </div>
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalPrice">R$ 0,00</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn" disabled>
+                <i class="ri-whatsapp-line"></i> Finalizar no WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification (Adicionado ao carrinho) -->
+    <div id="toast" class="toast">Produto adicionado ao carrinho!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
